@@ -1,10 +1,19 @@
 .content {
   max-width: 700px;
-  display: flex;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 5rem auto 4rem;
+  padding: 0 2rem;
 
-  h1 {
-    margin-left: 0.5rem;
+  a {
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+
+    h1 {
+      margin-left: 0.5rem;
+
+      strong {
+        color: var(--pink-500);
+      }
+    }
   }
 }
