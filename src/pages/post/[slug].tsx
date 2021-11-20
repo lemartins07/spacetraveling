@@ -7,10 +7,10 @@ import { RichText } from 'prismic-dom';
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import Prismic from '@prismicio/client';
-import { title } from 'process';
 import { getPrismicClient } from '../../services/prismic';
 
 import styles from './post.module.scss';
+import { Comments } from '../../components/Comments/index';
 
 interface Post {
   first_publication_date: string | null;
@@ -92,6 +92,20 @@ export default function Post({ post }: PostProps): JSX.Element {
           ))}
         </article>
       </main>
+      <footer className={styles.postFooter}>
+        <ul className={styles.postControlLinks}>
+          <li>
+            <p>Titulo post anterior</p>
+            <a>Post anterior</a>
+          </li>
+          <li>
+            <p>Titulo próximo post</p>
+            <a>Próximo post</a>
+          </li>
+        </ul>
+
+        <Comments />
+      </footer>
     </>
   );
 }
