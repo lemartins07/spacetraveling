@@ -9,6 +9,11 @@
     border: none;
     color: var(--pink-500);
     font-size: 1.125rem;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
