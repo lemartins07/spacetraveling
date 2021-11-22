@@ -15,7 +15,6 @@ import Loader from '../../components/Loader';
 
 import styles from './post.module.scss';
 import { Comments } from '../../components/Comments/index';
-import useUpdatePreviewRef from '../../utils/useUpdatePreviewRef';
 
 interface Post {
   uid: string;
